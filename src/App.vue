@@ -1,12 +1,15 @@
 
 <template>
+<div class="geral">
+
   <div>
-    <h1>Wise advice</h1>
+    <h1 class="tittle">Wise advice</h1>
   </div>
   <div>
-    <button class="bg-red-500" @click="getAdvice">Give me an advice</button>
-    <div>{{ this.advice }}</div>
+    <button class="button" @click="getAdvice">Give me an advice</button>
+    <div class="advice">"{{ this.advice }}"</div>
   </div>
+</div>
 </template>
 
 <script>
@@ -30,6 +33,30 @@ export default {
 }
 </script>
 
-<!-- <style>
-
-</style> -->
+<style>
+.button {
+  background-color: blueviolet;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 5px;
+  color: white
+}
+.tittle{
+  padding-block-end: 40px;
+  font-size: xxx-large;
+  color: white;
+}
+.geral{
+  background-color: violet;
+  padding: 100px;
+}
+.advice{
+  padding: 50px;
+  padding-right: 30px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 5px;
+  font: xxxx-large;
+  color: blueviolet;
+}
+</style>
