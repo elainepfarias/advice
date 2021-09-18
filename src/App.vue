@@ -7,7 +7,7 @@
   </div>
   <div>
     <button class="button" @click="getAdvice">Give me an advice</button>
-    <div class="advice">"{{ this.advice }}"</div>
+    <div class="advice">{{ this.advice }}</div>
   </div>
 </div>
 </template>
